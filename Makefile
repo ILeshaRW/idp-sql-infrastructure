@@ -25,5 +25,7 @@ down: ## Остановка всех контейнеров проекта
 
 bash: ## Зайти в bash контейнера с php
 	docker-compose exec php /bin/bash
-nginx-bash:
-	docker-compose exec nginx
+cu:
+	docker-compose exec php composer update
+ci:
+	docker-compose exec php composer install
